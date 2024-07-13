@@ -1,0 +1,21 @@
+{
+    "compilerOptions": {
+      "target": "es6",                         // Spécifie la version ECMAScript cible
+      "module": "CommonJS",                    // Spécifie le système de module
+      "strict": true,                          // Active toutes les vérifications strictes
+      "esModuleInterop": true,                 // Active la compatibilité interopérable avec les modules ES
+      "forceConsistentCasingInFileNames": true,// Enforce la cohérence de la casse dans les noms de fichiers
+      "skipLibCheck": true,                    // Ignore la vérification des types dans les fichiers de définition
+      "outDir": "./dist",                      // Spécifie le répertoire de sortie pour les fichiers JavaScript compilés
+      "rootDir": "./src",                      // Spécifie le répertoire racine des fichiers d'entrée
+      "sourceMap": true                        // Génère des fichiers source map pour le débogage
+    },
+    "include": [
+      "src/**/*"                               // Inclut tous les fichiers TypeScript dans le répertoire src
+    ],
+    "exclude": [
+      "node_modules",                          // Exclut le répertoire node_modules
+      "**/*.spec.ts"                           // Exclut les fichiers de test
+    ]
+  }
+  
