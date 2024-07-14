@@ -5,11 +5,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const auth_route_1 = __importDefault(require("./routes/auth.route"));
+const test_auth_route_1 = __importDefault(require("./routes/test.auth.route"));
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 //app.use(cookieParser());
 //les routes de mon api 
 app.use("/api/auth/", auth_route_1.default);
+app.use("/api/test/", test_auth_route_1.default);
 //app.get("/", ()=>{console.log("tottototot")})
 app.listen(8000, () => {
     console.log("Server is running!");

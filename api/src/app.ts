@@ -1,5 +1,6 @@
 import express from "express"
 import authRoute from "./routes/auth.route"
+import testAuthRute from "./routes/test.auth.route";
 const app = express();
 
 app.use(express.json());
@@ -8,6 +9,7 @@ app.use(express.json());
 
 //les routes de mon api 
 app.use("/api/auth/", authRoute);
+app.use("/api/test/", testAuthRute);
 
 
 

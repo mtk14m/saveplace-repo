@@ -8,7 +8,8 @@
       "skipLibCheck": true,                    // Ignore la vérification des types dans les fichiers de définition
       "outDir": "./dist",                      // Spécifie le répertoire de sortie pour les fichiers JavaScript compilés
       "rootDir": "./src",                      // Spécifie le répertoire racine des fichiers d'entrée
-      "sourceMap": true                        // Génère des fichiers source map pour le débogage
+      "sourceMap": true, 
+      "typeRoots": ["./node_modules/@types", "./@types"]                       // Génère des fichiers source map pour le débogage
     },
     "include": [
       "src/**/*"                               // Inclut tous les fichiers TypeScript dans le répertoire src
