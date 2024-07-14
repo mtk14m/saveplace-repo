@@ -10,7 +10,7 @@ app.use(express_1.default.json());
 //app.use(cookieParser());
 //les routes de mon api 
 app.use("/api/auth/", auth_route_1.default);
-app.get("/", () => { console.log("tottototot"); });
+//app.get("/", ()=>{console.log("tottototot")})
 app.listen(8000, () => {
     console.log("Server is running!");
 });
